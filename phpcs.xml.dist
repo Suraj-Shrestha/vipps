@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<ruleset name="vipps">
+
+    <file>./src</file>
+    <file>./test/Unit</file>
+    <file>./test/Integration</file>
+
+    <rule ref="PSR2"/>
+</ruleset>

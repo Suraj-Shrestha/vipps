@@ -1,0 +1,26 @@
+<phpunit colors="true">
+    <testsuites>
+        <testsuite name="Unit tests">
+            <directory>./test/Unit</directory>
+        </testsuite>
+        <testsuite name="Integration tests">
+            <directory>./test/Integration</directory>
+        </testsuite>
+    </testsuites>
+
+    <logging>
+        <log type='coverage-html' target='test/output/report'/>
+        <log type='coverage-clover' target='test/output/clover.xml'/>
+    </logging>
+
+    <filter>
+        <whitelist>
+            <directory>./</directory>
+            <exclude>
+                <directory>./examples</directory>
+                <directory>./test</directory>
+                <directory>./vendor</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+</phpunit>
